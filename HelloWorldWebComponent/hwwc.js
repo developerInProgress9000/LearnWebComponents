@@ -2,7 +2,7 @@
 var gbwIsRegistered = false;
 
 // ES6 class
-class HelloWorld extends HTMLParagraphElement {
+class HelloWorld extends HTMLElement {
   // constructor is called when the element is displayed
   constructor() {
     super();
@@ -34,9 +34,10 @@ class GoodbyeWorld extends HTMLParagraphElement {
   }
 }
 
-
+// Solved issue of customElements.define not running in chrome from the link
+// mentioned in issue on GitHub. You have to not extend paragraph.
 function registerHelloWorld() {
-  customElements.define("hello-world", HelloWorld, { extends: "p" });
+  customElements.define("hello-world", HelloWorld);
 }
 
 
