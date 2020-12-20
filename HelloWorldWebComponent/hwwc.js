@@ -39,6 +39,7 @@ function registerHelloWorld() {
   customElements.define("hello-world", HelloWorld, { extends: "p" });
 }
 
+
 function registerGoodbyeWorld() {
   if(!gbwIsRegistered) {
     customElements.define("goodbye-world", GoodbyeWorld, { extends: "p" });
@@ -52,6 +53,4 @@ function registerGoodbyeWorld() {
 // or simply <hello-world /> is recognised as this element
 window.onload = function() {
   registerHelloWorld();
-
-  
 }
