@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="streams.css"></link>
+
+    <script type="text/javascript" src="streams.js"></script>
+</head>
+
+
+<body>
+    <div id="body_holder">
+        <div class="body_section">
+            <div id="instructions_holder">
+                Welcome to Stream Search. Here you can find out what streaming platforms a given movie is on. Simply enter the name of the movie that you would like to look up in the search bar below. Then an image for will display below for each streaming platform that
+                has the movie, or No Results otherwise.
+            </div>
+        </div>
+
+        <div class="body_section">
+            <input id="search_bar" type="text"></input>
+        </div>
+
+        <div id="results_section" class="body_section">
+            Results
+
+            <streaming-platform-display></streaming-platform-display>
+        </div>
+    </div>
+</body>
+
+
+<template id="my-template">
+    <style>
+        .platform_logos {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+    <div>
+        <img class="platform_logos" src="resources/images/Netflix_Logo_RGB.png" />
+    </div>
+</template>
+
+</html>

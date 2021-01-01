@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+    padding: 10px;
+    background-color: #cccccc;
+    text-align: center;
+}
+
+#body_holder {
+    width: 99%;
+    margin: auto;
+}
+
+.body_section {
+    margin-bottom: 20px;
+}
+
+#search_bar {
+    min-width: 40%;
+}
+
+#instructions_holder {
+    width: 80%;
+    text-align: left;
+    margin: auto;
+}
